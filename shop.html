@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Shoe Shop</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="search-container">
+<input 
+type="text" 
+id="searchInput" 
+placeholder="Search shoes..." 
+onkeyup="searchProducts()">
+</div>
+
+<header></header>
+
+<section class="products container">
+
+<h2 class="section-title">Our Shoe Collection</h2>
+
+<div class="product-grid">
+
+<div class="product">
+<span class="badge">SALE</span>
+<img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500">
+<h3>Nike Running Shoes</h3>
+<div class="rating">⭐⭐⭐⭐⭐</div>
+<p class="price">₹8,999</p>
+<button onclick="addToCart('Nike Running Shoes',9999)">Add to Cart</button>
+</div>
+
+<div class="product">
+<img src=https://i.pinimg.com/736x/e1/37/b0/e137b0954f7b9bc1fe70c384d7f6aead.jpg>
+<h3>Adidas Ultraboost</h3>
+<div class="rating">⭐⭐⭐⭐⭐</div>
+<p class="price">₹11,499</p>
+<button onclick="addToCart('Adidas Ultraboost',11499)">Add to Cart</button>
+</div>
+
+<div class="product">
+    <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=500" alt="Puma Shoe">
+    <h3>Puma Shoe</h3>
+    <div class="rating">⭐⭐⭐⭐⭐</div>
+   <p class="price">₹3,499</p>
+    <button onclick="addToCart('Puma Shoe',3499)">Add to Cart</button>
+</div>
+
+<div class="product">
+<img src="https://i.pinimg.com/1200x/aa/87/8a/aa878ae1e08767a715f58314f3d2f5d0.jpg">
+<h3>Reebok Training Shoes</h3>
+<div class="rating">⭐⭐⭐⭐</div>
+<p class="price">₹6,999</p>
+<button onclick="addToCart('Reebok Training Shoes',6999)">Add to Cart</button>
+</div>
+
+<div class="product">
+<span class="badge">NEW</span>
+<img src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?w=500">
+<h3>Nike Air Max</h3>
+<div class="rating">⭐⭐⭐⭐⭐</div>
+<p class="price">₹12,999</p>
+<button onclick="addToCart('Nike Air Max',12999)">Add to Cart</button>
+</div>
+
+<div class="product">
+<img src="https://i.pinimg.com/736x/e1/be/30/e1be309aac82c15582aedbf8ec753f81.jpg">
+<h3>Converse Sneakers</h3>
+<div class="rating">⭐⭐⭐⭐</div>
+<p class="price">₹5,499</p>
+<button onclick="addToCart('Converse Sneakers',5499)">Add to Cart</button>
+</div>
+
+<div class="product">
+<img src="https://i.pinimg.com/1200x/be/53/46/be53465f1370ad4a7bd7ea75896ed317.jpg">
+<h3>Jordan Shoes</h3>
+<div class="rating">⭐⭐⭐⭐⭐</div>
+<p class="price">₹14,999</p>
+<button onclick="addToCart('Jordan Basketball Shoes',14999)">Add to Cart</button>
+</div>
+
+<div class="product">
+<img src="https://i.pinimg.com/736x/7f/9b/3b/7f9b3ba6d846c2a495b67545b1527d84.jpg">
+<h3>New Balance Sneakers</h3>
+<div class="rating">⭐⭐⭐⭐</div>
+<p class="price">₹8,999</p>
+<button onclick="addToCart('New Balance Sneakers',8999)">Add to Cart</button>
+</div>
+
+</div>
+
+</section>
+
+
+<script src="script.js"></script>
+
+
+
+</body>
+</html>

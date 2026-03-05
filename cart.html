@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <div class="container nav">
+    <h2 class="logo">ShoeVerse</h2>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="cart.html">Cart</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="cart container">
+  <h2>Your Cart</h2>
+
+  <div id="cart-items">Cart is empty</div>
+
+  <div class="checkout-box">
+    <h3>Checkout</h3>
+
+    <p class="checkout-total">Total: <span id="cartTotal">₹0</span></p>
+
+    <label class="label">Select Payment Method</label>
+
+    <div class="pay-options">
+      <label class="pay-option">
+        <input type="radio" name="pay" value="upi" checked>
+        UPI
+      </label>
+
+      <label class="pay-option">
+        <input type="radio" name="pay" value="card">
+        Card
+      </label>
+
+      <label class="pay-option">
+        <input type="radio" name="pay" value="cod">
+        Cash on Delivery
+      </label>
+    </div>
+
+    <div id="upiBox" class="pay-box">
+      <label class="label">UPI ID</label>
+      <input id="upiId" type="text" placeholder="example@upi">
+    </div>
+
+    <div id="cardBox" class="pay-box hidden">
+      <label class="label">Card Number</label>
+      <input id="cardNo" type="text" placeholder="1234 5678 9012 3456">
+
+      <div class="card-row">
+        <div>
+          <label class="label">Expiry</label>
+          <input id="exp" type="text" placeholder="MM/YY">
+        </div>
+
+        <div>
+          <label class="label">CVV</label>
+          <input id="cvv" type="password" placeholder="123">
+        </div>
+      </div>
+    </div>
+
+    <div id="codBox" class="pay-box hidden">
+      <p class="cod-text">Pay cash when your order is delivered ✅</p>
+    </div>
+
+    <button class="buy-btn" onclick="placeOrder()">Buy Now</button>
+
+    <p id="orderMsg" class="order-msg"></p>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
